@@ -1,0 +1,72 @@
+/*
+.item-a {
+  grid-area: profil;
+  background-color: chocolate;
+
+}
+.item-b {
+  grid-area: competences;
+  background-color: darkgray;
+}
+.item-c {
+  grid-area: aptitudes;
+  background-color: darkgreen;
+}
+.item-d {
+  grid-area: ExPro;
+  background-color: darkkhaki;
+}
+
+.item-e {
+  grid-area: interets;
+  background-color: darkseagreen;
+}
+*/
+
+
+.item1 { grid-area: profil; }
+.item2 { grid-area: Compétences; }
+.item3 { grid-area: Aptitudes; }
+.item4 { grid-area: ExPro; }
+.item5 { grid-area: Interets; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'profil profil profil profil '
+  'Compétences Compétences Aptitudes Aptitudes'
+  'ExPro ExPro ExPro ExPro '
+  'Interets Interets Interets Interets ';
+  
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size:18px;
+}
+
+
+
+
+/*
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header header header header header header'
+  'menu main main main right right'
+  'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
