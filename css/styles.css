@@ -1,18 +1,21 @@
-.item1 { grid-area: profil; }
-.item2 { grid-area: Compétences; }
-.item3 { grid-area: Aptitudes; }
-.item4 { grid-area: ExPro; }
-.item5 { grid-area: Interets; }
-.item6 { grid-area: CV; }
+.item1 { grid-area: CV; margin-left: auto ; margin-right: auto;}
+.item2 { grid-area: profil; }
+.item3 { grid-area: Compétences; }
+.item4 { grid-area: Aptitudes; }
+.item5 { grid-area: ExPro; }
+.item6 { grid-area: Interets; }
+.item7 { grid-area: Formation; }
+
+
 
 .grid-container {
   display: grid;
   grid-template-areas:
-  'CV  CV'
-  'profil  ExPro'
-  'Compétences ExPro'
-  'Aptitudes ExPro  '
-  'Interets Interets  ';
+  'CV CV CV CV CV CV'
+  'profil profil profil ExPro ExPro ExPro'
+  'Formation Formation Formation ExPro ExPro ExPro'
+  'Aptitudes Aptitudes Aptitudes Aptitudes Aptitudes Aptitudes  '
+  'Interets Interets Interets Compétences Compétences Compétences  ';
 }
 
 .grid-container > div {
@@ -20,7 +23,7 @@
   text-align: center;
   font-size:18px;
   border-radius: 42px;
-  margin: 3%;
+  margin: 1%;
 }
 li{
   list-style: none;
@@ -33,11 +36,18 @@ ul{
 }
 .pic {
   width: 200px;
-  float: right;
+  float: left;
   border-radius: 100px;
   margin: center;
+  margin-top: 15px;
 }
 
 h1{
   text-transform: uppercase;
+}
+
+.container{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
