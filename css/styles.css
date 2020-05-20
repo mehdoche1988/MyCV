@@ -1,4 +1,12 @@
-.item1 { grid-area: CV; margin-left: auto ; margin-right: auto;}
+
+.item1 { 
+  grid-area: CV; 
+  margin-left: auto ; 
+  margin-right: auto;
+
+}
+
+
 .item2 { grid-area: profil; }
 .item3 { grid-area: Compétences; }
 .item4 { grid-area: Aptitudes; }
@@ -19,10 +27,11 @@
 }
 
 .grid-container > div {
-  background-color: rgba(99, 7, 7, 0.8);
+  background-color: #ffffff;
+ opacity: 0.4;
   text-align: center;
   font-size:18px;
-  border-radius: 42px;
+  border-radius: 22px;
   margin: 1%;
 }
 li{
@@ -34,13 +43,7 @@ ul{
   margin: 5px;
   text-align: justify;
 }
-.pic {
-  width: 200px;
-  float: left;
-  border-radius: 100px;
-  margin: center;
-  margin-top: 15px;
-}
+
 
 h1{
   text-transform: uppercase;
@@ -50,4 +53,21 @@ h1{
   width: 75%;
   margin-left: auto;
   margin-right: auto;
+}
+
+html{
+  background-color: #1687ed;
+  background-image: url("../fond.jpeg");
+  background-repeat: no-repeat;
+  background-position: bottom right ;
+  background-size: cover;
+  
+}
+
+.tache{
+  column-count: 3;
+}
+
+.ed1{
+  column-count: 4;
 }
