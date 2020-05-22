@@ -1,0 +1,64 @@
+@charset "UTF-8";
+html {
+  background-color: #1687ed;
+  background-image: url("../img/fond.jpeg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover; }
+  html .container {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto; }
+    html .container .grid-container {
+      display: grid;
+      grid-template-areas: 'CV CV CV CV CV CV' 'profil profil profil ExPro ExPro ExPro' 'Formation Formation Formation ExPro ExPro ExPro' 'Aptitudes Aptitudes Aptitudes Aptitudes Aptitudes Aptitudes  ' 'Interets Interets Interets Compétences Compétences Compétences  '; }
+      html .container .grid-container > div {
+        background-color: #ffffff;
+        opacity: 0.4;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 22px;
+        margin: 1%; }
+      html .container .grid-container h1 {
+        text-transform: uppercase; }
+      html .container .grid-container .item1 {
+        grid-area: CV;
+        margin-left: auto;
+        margin-right: auto; }
+      html .container .grid-container .item2 {
+        grid-area: profil; }
+      html .container .grid-container .item3 {
+        grid-area: Compétences; }
+      html .container .grid-container ul {
+        column-count: 2;
+        margin: 5px;
+        text-align: justify; }
+        html .container .grid-container ul li {
+          list-style: none;
+          margin: 5px; }
+      html .container .grid-container .item4 {
+        grid-area: Aptitudes; }
+      html .container .grid-container .item5 {
+        grid-area: ExPro; }
+        html .container .grid-container .item5 ul {
+          column-count: 2;
+          margin: 5px;
+          text-align: justify; }
+          html .container .grid-container .item5 ul li {
+            list-style: none;
+            margin: 5px; }
+        html .container .grid-container .item5 .ed1 {
+          column-count: 4; }
+        html .container .grid-container .item5 .tache {
+          column-count: 3; }
+      html .container .grid-container .item6 {
+        grid-area: Interets; }
+        html .container .grid-container .item6 ul {
+          column-count: 2;
+          margin: 5px;
+          text-align: justify; }
+          html .container .grid-container .item6 ul li {
+            list-style: none;
+            margin: 5px; }
+      html .container .grid-container .item7 {
+        grid-area: Formation; }

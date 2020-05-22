@@ -1,0 +1,108 @@
+$li_list-style:none;
+$li_margin:5px;
+$ul_column-count:2;
+$ul_margin:5px;
+$ul_text-align:justify;
+
+
+html{
+    background-color: #1687ed;
+    background-image: url("../img/fond.jpeg");
+    background-repeat: no-repeat;
+    background-position: bottom right ;
+    background-size: cover;
+
+
+    .container{
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+            'CV CV CV CV CV CV'
+            'profil profil profil ExPro ExPro ExPro'
+            'Formation Formation Formation ExPro ExPro ExPro'
+            'Aptitudes Aptitudes Aptitudes Aptitudes Aptitudes Aptitudes  '
+            'Interets Interets Interets Compétences Compétences Compétences  ';
+
+            >div{
+                background-color: #ffffff;
+                opacity: 0.4;
+                 text-align: center;
+                 font-size:18px;
+                 border-radius: 22px;
+                 margin: 1%;
+            }
+
+            h1{
+                text-transform: uppercase;
+            }
+
+            .item1 { 
+                grid-area: CV; 
+                margin-left: auto ; 
+                margin-right: auto;
+              
+              }
+            .item2 { grid-area: profil; }
+            .item3 { grid-area: Compétences; }
+
+                ul{ 
+                    column-count: $ul_column-count;
+                    margin: $ul_margin;
+                    text-align: $ul_text-align;
+
+                    li{
+                        list-style:$li_list-style ;
+                        margin: $li_margin;
+                    }
+
+                    }
+            .item4 { grid-area: Aptitudes; }
+            .item5 { grid-area: ExPro; 
+
+                ul{ 
+                    column-count: $ul_column-count;
+                    margin: $ul_margin;
+                    text-align: $ul_text-align;
+                    
+                    li{
+                        list-style:$li_list-style ;
+                        margin: $li_margin;
+                    }
+
+                    }
+                .ed1{
+                    column-count:4 ;
+                }
+                .tache{
+                    column-count: 3;
+                }
+                
+            }
+            .item6 { grid-area: Interets; 
+            
+                ul{ 
+                    column-count: $ul_column-count;
+                    margin: $ul_margin;
+                    text-align: $ul_text-align;
+                    
+                    li{
+                        list-style:$li_list-style ;
+                        margin: $li_margin;
+                    }
+
+                    }
+            
+            
+            }
+            .item7 { grid-area: Formation; }
+
+
+        }
+
+    }
+}
